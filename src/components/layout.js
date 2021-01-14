@@ -32,6 +32,7 @@ const Wrapper = styled('div')`
 const Content = styled('main')`
   display: flex;
   flex-grow: 1;
+  width:100%;
   margin: 0px 88px;
   padding-top: 3rem;
   background: ${({ theme }) => theme.colors.background};
