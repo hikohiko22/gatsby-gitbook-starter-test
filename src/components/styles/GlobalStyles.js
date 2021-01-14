@@ -32,6 +32,10 @@ export const baseStyles = css`
     scroll-behavior: smooth;
   }
 
+  hr {
+    border: solid 1px #ccc;
+  }
+
   a {
     transition: color 0.15s;
     /* color: #663399; */

@@ -10,7 +10,7 @@ const StyledFlex = styled('div')`
     display: block;
   }
 
-  .styledClass {
+  .styledCard {
     flex-basis: calc( 50% - .5em );
     align-self: streach;
     margin-bottom: 1em;

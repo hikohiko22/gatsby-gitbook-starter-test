@@ -5,6 +5,7 @@ import CodeBlock from './codeBlock';
 import AnchorTag from './anchor';
 import FlexTag from './designSystem/flex';
 import CardTag from './designSystem/card';
+import NoticeTag from './designSystem/notice'
 
 
 const StyledPre = styled('pre')`
@@ -42,6 +43,7 @@ export default {
   a: AnchorTag,
   flex: FlexTag,
   card: CardTag,
+  notice: NoticeTag,
   // TODO add `img`
   // TODO add `blockquote`
   // TODO add `ul`

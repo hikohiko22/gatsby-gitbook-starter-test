@@ -8,9 +8,7 @@ import { Search } from 'styled-icons/fa-solid/Search';
 const SearchIcon = styled(Search)`
   width: 1em;
   pointer-events: none;
-  margin-right: 10px;
-  position: absolute;
-  left: 15px;
+  margin-right: -1.75em;
   color: #2fd2c5;
 `;
 
@@ -67,6 +65,8 @@ const Input = styled.input`
 const Form = styled.form`
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  
   @media only screen and (max-width: 767px) {
     width: 100%;
     margin-left: 15px;
