@@ -3,6 +3,9 @@ import styled from '@emotion/styled';
 
 import CodeBlock from './codeBlock';
 import AnchorTag from './anchor';
+import FlexTag from './designSystem/flex';
+import CardTag from './designSystem/card';
+
 
 const StyledPre = styled('pre')`
   padding: 16px;
@@ -35,7 +38,10 @@ export default {
     </StyledPre>
   ),
   code: CodeBlock,
+  codetest: CodeBlock,
   a: AnchorTag,
+  flex: FlexTag,
+  card: CardTag,
   // TODO add `img`
   // TODO add `blockquote`
   // TODO add `ul`

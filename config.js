@@ -10,30 +10,17 @@ const config = {
     logoLink: 'https://www.intra-mart.jp/',
     title:
       "<a href='https://hasura.io/learn/'>intra-mart-design-system</a>",
-    githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
+    githubUrl: '',
     helpUrl: '',
     tweetText: '',
-    social: `<li>
-		    <a href="https://twitter.com/hasurahq" target="_blank" rel="noopener">
-		      <div class="twitterBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/twitter-brands-block.svg' alt={'Twitter'}/>
-		      </div>
-		    </a>
-		  </li>
-			<li>
-		    <a href="https://discordapp.com/invite/hasura" target="_blank" rel="noopener">
-		      <div class="discordBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/discord-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>`,
+    social: ``,
     links: [{ text: '', link: '' }],
     search: {
-      enabled: false,
-      indexName: '',
-      algoliaAppId: process.env.GATSBY_ALGOLIA_APP_ID,
-      algoliaSearchKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
-      algoliaAdminKey: process.env.ALGOLIA_ADMIN_KEY,
+      enabled: true,
+      indexName: 'testDesignSystem',
+      algoliaAppId: '7ZID1KL83T',
+      algoliaSearchKey: `ca99487c43ccda101f0a96678b7cce3e`,
+      algoliaAdminKey: `61ff11b355b74c235ef7eefaa1e695ac`,
     },
   },
   sidebar: {
@@ -44,6 +31,7 @@ const config = {
       '/parts',
       '/components',
       '/utility',
+      '/designtoken'
     ],
     collapsedNav: [
       '/codeblock', // add trailing slash if enabled above
