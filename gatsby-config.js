@@ -13,7 +13,6 @@ const plugins = [
       src: path.join(__dirname, 'src'),
       pageComp: path.join(__dirname, 'src/components/pageComponents'),
       mdxComp: path.join(__dirname, 'src/components/mdxComponents'),
-      compImages: path.join(__dirname, 'src/components/images'),
       static: path.join(__dirname, 'static'),
       root: path.join(__dirname, '.'),
     }
