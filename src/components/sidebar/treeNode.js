@@ -1,7 +1,7 @@
 import React from 'react';
 import OpenedSvg from '../images/opened';
 import ClosedSvg from '../images/closed';
-import config from '../../const/config';
+import config from 'src/const/config.js';
 import Link from '../link';
 
 const TreeNode = ({ className = '', setCollapsed, collapsed, url, title, items, ...rest }) => {
