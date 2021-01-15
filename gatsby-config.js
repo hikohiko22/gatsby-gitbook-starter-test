@@ -1,12 +1,18 @@
 require("dotenv").config();
 const queries = require("./src/utils/algolia");
 const config = require("./src/const/config");
+const path = require('path');
 const plugins = [
   'gatsby-plugin-sitemap',
   'gatsby-plugin-sharp',
   `gatsby-plugin-sass`,
   `gatsby-plugin-material-ui`,
-  'gatsby-plugin-root-import',
+  {
+    resolve: 'gatsby-plugin-root-import',
+    options: {
+      src: path.join(__dirname, 'src')
+    }
+  },
   {
     resolve: `gatsby-plugin-layout`,
     options: {

@@ -6,10 +6,10 @@ import Link from './link';
 import Loadable from 'react-loadable';
 
 import config from 'src/const/config.js';
-import LoadingProvider from './mdxComponents/loading';
+import LoadingProvider from 'src/components/mdxComponents/loading';
 import { DarkModeSwitch } from './DarkModeSwitch';
 
-const help = require('./images/help.svg');
+const help = require('src/components/images/help.svg');
 
 const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false;
 
@@ -26,7 +26,7 @@ if (isSearchEnabled && config.header.search.indexName) {
 import Sidebar from './sidebar';
 
 const LoadableComponent = Loadable({
-  loader: () => import('./search/index'),
+  loader: () => import('src/components/pageComponents/search/index'),
   loading: LoadingProvider,
 });
 
