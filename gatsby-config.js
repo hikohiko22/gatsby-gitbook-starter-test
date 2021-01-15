@@ -6,6 +6,7 @@ const plugins = [
   'gatsby-plugin-sharp',
   `gatsby-plugin-sass`,
   `gatsby-plugin-material-ui`,
+  'gatsby-plugin-root-import',
   {
     resolve: `gatsby-plugin-layout`,
     options: {
