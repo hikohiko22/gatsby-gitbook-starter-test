@@ -9,7 +9,7 @@ import config from 'src/const/config.js';
 import LoadingProvider from 'src/components/mdxComponents/loading';
 import { DarkModeSwitch } from '../DarkModeSwitch';
 
-const help = require('src/components/images/help.svg');
+const help = require('compImages/help.svg');
 
 const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false;
 
@@ -76,13 +76,13 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
       }
     `}
     render={data => {
-      const logoImg = require('src/components/images/logo.png');
+      const logoImg = require('compImages/logo.png');
 
-      const twitter = require('src/components/images/twitter.svg');
+      const twitter = require('compImages/twitter.svg');
 
-      const discordBrandsBlock = require('src/components/images/discord-brands-block.svg');
+      const discordBrandsBlock = require('compImages/discord-brands-block.svg');
 
-      const twitterBrandsBlock = require('src/components/images/twitter-brands-block.svg');
+      const twitterBrandsBlock = require('compImages/twitter-brands-block.svg');
 
       const {
         site: {
