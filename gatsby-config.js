@@ -10,7 +10,9 @@ const plugins = [
   {
     resolve: 'gatsby-plugin-root-import',
     options: {
-      src: path.join(__dirname, 'src')
+      src: path.join(__dirname, 'src'),
+      pageComp: path.join(__dirname, 'src/components/pageComponents'),
+      mdxComp: path.join(__dirname, 'src/components/mdxComponents'),
     }
   },
   {

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming';
 import { default as defaultTheme } from './theme';
-import Header from 'src/components/pageComponents/Header';
+import Header from 'pageComp/Header';
 
 export default function ThemeProvider({ children, theme = {}, location }) {
   return (
