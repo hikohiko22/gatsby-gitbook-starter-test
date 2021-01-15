@@ -5,7 +5,7 @@ import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 
 import { Layout, Link } from '$components';
 import NextPrevious from 'pageComp/NextPrevious';
-import config from 'src/const/config.js';
+import config from 'root/config.js';
 import { Edit, StyledHeading, StyledMainWrapper } from 'src/components/styles/Docs';
 
 const forcedNavOrder = config.sidebar.forcedNavOrder;
@@ -25,7 +25,7 @@ export default class MDXRuntimeTest extends Component {
       },
     } = data;
 
-    const gitHub = require('compImages/github.svg');
+    const gitHub = require('static/images/github.svg');
 
     const navItems = allMdx.edges
       .map(({ node }) => node.fields.slug)

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import config from './const/config';
+import config from '../config';
 
 export default class HTML extends React.Component {
   render() {

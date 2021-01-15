@@ -5,11 +5,11 @@ import GitHubButton from 'react-github-btn';
 import Link from 'pageComp/link';
 import Loadable from 'react-loadable';
 
-import config from 'src/const/config.js';
+import config from 'root/config.js';
 import LoadingProvider from 'src/components/mdxComponents/loading';
 import { DarkModeSwitch } from 'pageComp/DarkModeSwitch';
 
-const help = require('compImages/help.svg');
+const help = require('static/images/help.svg');
 
 const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false;
 
@@ -76,13 +76,13 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
       }
     `}
     render={data => {
-      const logoImg = require('compImages/logo.png');
+      const logoImg = require('static/images/logo.png');
 
-      const twitter = require('compImages/twitter.svg');
+      const twitter = require('static/images/twitter.svg');
 
-      const discordBrandsBlock = require('compImages/discord-brands-block.svg');
+      const discordBrandsBlock = require('static/images/discord-brands-block.svg');
 
-      const twitterBrandsBlock = require('compImages/twitter-brands-block.svg');
+      const twitterBrandsBlock = require('static/images/twitter-brands-block.svg');
 
       const {
         site: {

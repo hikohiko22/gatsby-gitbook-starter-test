@@ -1,6 +1,6 @@
 require("dotenv").config();
 const queries = require("./src/utils/algolia");
-const config = require("./src/const/config");
+const config = require("./config");
 const path = require('path');
 const plugins = [
   'gatsby-plugin-sitemap',
@@ -14,6 +14,8 @@ const plugins = [
       pageComp: path.join(__dirname, 'src/components/pageComponents'),
       mdxComp: path.join(__dirname, 'src/components/mdxComponents'),
       compImages: path.join(__dirname, 'src/components/images'),
+      static: path.join(__dirname, 'static'),
+      root: path.join(__dirname, '.'),
     }
   },
   {
