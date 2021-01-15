@@ -5,6 +5,7 @@ const plugins = [
   'gatsby-plugin-sitemap',
   'gatsby-plugin-sharp',
   `gatsby-plugin-sass`,
+  `gatsby-plugin-material-ui`,
   {
     resolve: `gatsby-plugin-layout`,
     options: {

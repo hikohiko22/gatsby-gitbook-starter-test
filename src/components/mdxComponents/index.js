@@ -6,6 +6,8 @@ import AnchorTag from './anchor';
 import FlexTag from './designSystem/flex';
 import CardTag from './designSystem/card';
 import NoticeTag from './designSystem/notice'
+import test from './designSystem/button'
+import { Tooltip, Button} from '@material-ui/core';
 
 
 const StyledPre = styled('pre')`
@@ -44,6 +46,9 @@ export default {
   flex: FlexTag,
   card: CardTag,
   notice: NoticeTag,
+  test: test,
+  button: Button,
+  tooltip: Tooltip,
   // TODO add `img`
   // TODO add `blockquote`
   // TODO add `ul`
