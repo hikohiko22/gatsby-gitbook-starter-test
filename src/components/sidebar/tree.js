@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import config from '../../../config';
+import config from '../../const/config';
 import TreeNode from './treeNode';
 
 const calculateTreeData = edges => {
