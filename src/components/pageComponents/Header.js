@@ -2,12 +2,12 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { StaticQuery, graphql } from 'gatsby';
 import GitHubButton from 'react-github-btn';
-import Link from './link';
+import Link from '../link';
 import Loadable from 'react-loadable';
 
 import config from 'src/const/config.js';
 import LoadingProvider from 'src/components/mdxComponents/loading';
-import { DarkModeSwitch } from './DarkModeSwitch';
+import { DarkModeSwitch } from '../DarkModeSwitch';
 
 const help = require('src/components/images/help.svg');
 
@@ -23,7 +23,7 @@ if (isSearchEnabled && config.header.search.indexName) {
   });
 }
 
-import Sidebar from './sidebar';
+import Sidebar from '../sidebar';
 
 const LoadableComponent = Loadable({
   loader: () => import('src/components/pageComponents/search/index'),
@@ -76,13 +76,13 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
       }
     `}
     render={data => {
-      const logoImg = require('./images/logo.png');
+      const logoImg = require('src/components/images/logo.png');
 
-      const twitter = require('./images/twitter.svg');
+      const twitter = require('src/components/images/twitter.svg');
 
-      const discordBrandsBlock = require('./images/discord-brands-block.svg');
+      const discordBrandsBlock = require('src/components/images/discord-brands-block.svg');
 
-      const twitterBrandsBlock = require('./images/twitter-brands-block.svg');
+      const twitterBrandsBlock = require('src/components/images/twitter-brands-block.svg');
 
       const {
         site: {
