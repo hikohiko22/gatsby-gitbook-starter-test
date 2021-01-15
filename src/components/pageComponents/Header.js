@@ -2,12 +2,12 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { StaticQuery, graphql } from 'gatsby';
 import GitHubButton from 'react-github-btn';
-import Link from '../link';
+import Link from 'pageComp/link';
 import Loadable from 'react-loadable';
 
 import config from 'src/const/config.js';
 import LoadingProvider from 'src/components/mdxComponents/loading';
-import { DarkModeSwitch } from '../DarkModeSwitch';
+import { DarkModeSwitch } from 'pageComp/DarkModeSwitch';
 
 const help = require('compImages/help.svg');
 
@@ -23,7 +23,7 @@ if (isSearchEnabled && config.header.search.indexName) {
   });
 }
 
-import Sidebar from '../sidebar';
+import Sidebar from 'pageComp/sidebar';
 
 const LoadableComponent = Loadable({
   loader: () => import('pageComp/search/index'),

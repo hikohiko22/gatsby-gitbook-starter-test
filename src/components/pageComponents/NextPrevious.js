@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from './link';
+import Link from 'pageComp/link';
 
-import { StyledNextPrevious } from './styles/PageNavigationButtons';
+import { StyledNextPrevious } from 'src/components/styles/PageNavigationButtons';
 
 const NextPrevious = ({ mdx, nav }) => {
   let currentIndex;

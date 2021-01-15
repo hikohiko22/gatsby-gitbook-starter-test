@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
-// import Link from './link';
+// import Link from 'pageComp/link';
 import config from 'src/const/config';
 import { Sidebar, ListItem } from 'src/components/styles/Sidebar';
 

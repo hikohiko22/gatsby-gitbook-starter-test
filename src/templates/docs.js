@@ -4,9 +4,9 @@ import { graphql } from 'gatsby';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 
 import { Layout, Link } from '$components';
-import NextPrevious from '../components/NextPrevious';
+import NextPrevious from 'pageComp/NextPrevious';
 import config from 'src/const/config.js';
-import { Edit, StyledHeading, StyledMainWrapper } from '../components/styles/Docs';
+import { Edit, StyledHeading, StyledMainWrapper } from 'src/components/styles/Docs';
 
 const forcedNavOrder = config.sidebar.forcedNavOrder;
 
